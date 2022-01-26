@@ -1,0 +1,10 @@
+StackLayout{
+    padding: 10px;
+}
+.shortUrl{
+    font-weight: bold;
+    font-size: 20px;
+}
+.longUrl{
+    font-size: 15px;
+}

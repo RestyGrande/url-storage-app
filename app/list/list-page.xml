@@ -1,0 +1,21 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+    
+    <ActionBar title="Tiny Url Api App">
+        <ActionBar.actionItems>
+             <ActionItem text="Add" tap="addItem"/>
+             <ActionItem text="reset" tap="reset"/>
+        </ActionBar.actionItems>
+    </ActionBar>
+
+    <GridLayout>
+        <!-- Add your page content here -->
+    </GridLayout>
+    <ListView id="urlList" items="{{url}}" itemTap="launch">
+        <ListView.itemTemplate>
+           <StackLayout>
+            <Label text="{{shortUrl || 'Unkown ShortUrl'}}" class="shortUrl"/>
+            <Label text="{{longUrl || 'Unkown LongUrl'}}" class="longUrl"/>
+           </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
